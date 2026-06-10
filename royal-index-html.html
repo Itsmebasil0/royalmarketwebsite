@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Hypermarket – Ottapalam</title>
+  <meta name="description" content="Royal Hypermarket – Ottapalam's premier shopping destination. Fresh produce, groceries, electronics and more." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Lucide icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <div class="nav-logo">
+          <i data-lucide="shopping-cart"></i>
+        </div>
+        <div>
+          <div class="brand-name">Royal Hypermarket</div>
+          <div class="brand-sub">Ottapalam, Kerala</div>
+        </div>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#hero">Home</a>
+        <a href="#departments">Services</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i data-lucide="menu" id="hamburger-icon"></i>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" onclick="closeMobile()">Home</a>
+      <a href="#departments" onclick="closeMobile()">Services</a>
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#blog" onclick="closeMobile()">Blog</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-label">✦ &nbsp; Ottapalam's Premier Hypermarket &nbsp; ✦</div>
+      <h1>Your Complete<br /><em>Shopping</em> Destination</h1>
+      <p>Quality products, unbeatable prices, and exceptional service — all in the heart of Ottapalam.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-gold">Visit Us Today</a>
+        <a href="tel:+919698300400" class="btn-outline">
+          <i data-lucide="phone" style="width:14px;height:14px;vertical-align:middle;margin-right:8px;"></i>Call Us
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── MARQUEE ── -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>Fresh Produce</span><span class="dot">✦</span>
+      <span>Grocery &amp; Staples</span><span class="dot">✦</span>
+      <span>Electronics</span><span class="dot">✦</span>
+      <span>Household Items</span><span class="dot">✦</span>
+      <span>Home Delivery</span><span class="dot">✦</span>
+      <span>Best Prices</span><span class="dot">✦</span>
+      <span>Quality Assured</span><span class="dot">✦</span>
+      <span>Community Trusted</span><span class="dot">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Fresh Produce</span><span class="dot">✦</span>
+      <span>Grocery &amp; Staples</span><span class="dot">✦</span>
+      <span>Electronics</span><span class="dot">✦</span>
+      <span>Household Items</span><span class="dot">✦</span>
+      <span>Home Delivery</span><span class="dot">✦</span>
+      <span>Best Prices</span><span class="dot">✦</span>
+      <span>Quality Assured</span><span class="dot">✦</span>
+      <span>Community Trusted</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ── DEPARTMENTS ── -->
+  <section id="departments" class="section-light">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">What We Offer</div>
+        <h2>Our <em>Departments</em></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="dept-grid">
+        <div class="dept-card reveal">
+          <div class="dept-icon" style="background:rgba(74,222,128,0.12);">
+            <i data-lucide="apple" style="color:#4ade80;"></i>
+          </div>
+          <h3>Fresh Produce</h3>
+          <p>Farm-fresh fruits, vegetables &amp; organic options for your healthy lifestyle.</p>
+          <div class="card-link"><span>Explore</span><i data-lucide="chevron-right" style="width:14px;height:14px;"></i></div>
+        </div>
+        <div class="dept-card reveal">
+          <div class="dept-icon" style="background:rgba(251,146,60,0.12);">
+            <i data-lucide="package" style="color:#fb923c;"></i>
+          </div>
+          <h3>Grocery &amp; Staples</h3>
+          <p>Complete range of daily essentials &amp; packaged goods at the best prices.</p>
+          <div class="card-link"><span>Explore</span><i data-lucide="chevron-right" style="width:14px;height:14px;"></i></div>
+        </div>
+        <div class="dept-card reveal">
+          <div class="dept-icon" style="background:rgba(129,140,248,0.12);">
+            <i data-lucide="zap" style="color:#818cf8;"></i>
+          </div>
+          <h3>Electronics</h3>
+          <p>Latest gadgets and home appliances from trusted brands.</p>
+          <div class="card-link"><span>Explore</span><i data-lucide="chevron-right" style="width:14px;height:14px;"></i></div>
+        </div>
+        <div class="dept-card reveal">
+          <div class="dept-icon" style="background:rgba(244,114,182,0.12);">
+            <i data-lucide="shopping-cart" style="color:#f472b6;"></i>
+          </div>
+          <h3>Household Items</h3>
+          <p>Everything you need for your home and lifestyle under one roof.</p>
+          <div class="card-link"><span>Explore</span><i data-lucide="chevron-right" style="width:14px;height:14px;"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section-dark">
+    <div class="about-orb"></div>
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <div class="section-label gold">Who We Are</div>
+        <h2 style="color:#faf9f7;">Serving Ottapalam<br /><em style="color:#d4a017;">With Pride</em></h2>
+        <p class="about-desc">Royal Hypermarket has been the trusted shopping destination for the Ottapalam community. We combine quality products with warm, personal service — because you deserve both.</p>
+        <div class="values-grid">
+          <div class="value-item"><span class="dot-gold"></span>Customer First</div>
+          <div class="value-item"><span class="dot-gold"></span>Quality Assured</div>
+          <div class="value-item"><span class="dot-gold"></span>Best Prices</div>
+          <div class="value-item"><span class="dot-gold"></span>Community Focus</div>
+        </div>
+        <a href="#contact" class="btn-gold" style="display:inline-flex;align-items:center;gap:8px;margin-top:2rem;">
+          Our Story <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </a>
+      </div>
+      <div class="stats-grid reveal">
+        <div class="stat-card glass">
+          <div class="stat-num">1,619+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-card glass">
+          <div class="stat-num">5,000+</div>
+          <div class="stat-label">Products</div>
+        </div>
+        <div class="stat-card glass">
+          <div class="stat-num">4.1/5</div>
+          <div class="stat-label">Rating</div>
+        </div>
+        <div class="stat-card glass">
+          <div class="stat-num">8:30 AM</div>
+          <div class="stat-label">Opens Daily</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section id="reviews" class="section-cream">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Customer Love</div>
+        <h2>What People <em>Say</em></h2>
+        <div class="divider"></div>
+        <div class="rating-row">
+          <span class="stars">★★★★★</span>
+          <span class="rating-text">4.1 / 5 · 1,619 reviews</span>
+        </div>
+      </div>
+      <div class="review-grid">
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p>"Spacious, clean, and easy to navigate. Wide range of products from fresh produce to electronics — all at great prices."</p>
+          <div class="reviewer"><div class="avatar">S</div><span>Santhosh A J</span></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p>"A small beautiful mall, very neat and clean! Great shopping experience with genuinely helpful staff."</p>
+          <div class="reviewer"><div class="avatar">U</div><span>Unnikrishnan PS</span></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★</div>
+          <p>"Wide variety of products, convenient location near the bus stand. Love the improvements they keep making."</p>
+          <div class="reviewer"><div class="avatar">L</div><span>Liju K Nair</span></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p>"Good atmosphere, friendly behaviour, quality goods at fair prices — right in the heart of the city."</p>
+          <div class="reviewer"><div class="avatar">L</div><span>Local Customer</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BLOG ── -->
+  <section id="blog" class="section-light">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Insights</div>
+        <h2>Shopping <em>Tips &amp; Guides</em></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-featured reveal">
+          <div class="feat-label">✦ &nbsp; Featured</div>
+          <h3>Fresh Produce Selection Guide</h3>
+          <p>Expert tips for choosing the best farm-fresh fruits and vegetables for your family.</p>
+          <div class="card-link"><span>Read Article</span><i data-lucide="arrow-right" style="width:14px;height:14px;"></i></div>
+        </div>
+        <div class="blog-side">
+          <div class="blog-card reveal">
+            <h4>Weekly Shopping Tips</h4>
+            <p>Save money and time with our proven strategies and exclusive weekly offers.</p>
+            <div class="blog-footer"><span class="read-time">3 min read</span><i data-lucide="arrow-right" style="width:14px;height:14px;color:#b8860b;"></i></div>
+          </div>
+          <div class="blog-card reveal">
+            <h4>Kitchen Organisation Hacks</h4>
+            <p>Maximise your kitchen space using our curated household product range.</p>
+            <div class="blog-footer"><span class="read-time">4 min read</span><i data-lucide="arrow-right" style="width:14px;height:14px;color:#b8860b;"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section-cream">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <div class="section-label">Find Us</div>
+        <h2>Visit or <em>Contact</em> Us</h2>
+        <div class="info-item">
+          <div class="info-icon"><i data-lucide="map-pin"></i></div>
+          <div>
+            <div class="info-label">Address</div>
+            <div class="info-val">Palat Rd, JN, Ottapalam<br />Kerala 679101</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><i data-lucide="phone"></i></div>
+          <div>
+            <div class="info-label">Phone</div>
+            <div class="info-val"><a href="tel:+919698300400">096983 00400</a></div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><i data-lucide="clock"></i></div>
+          <div>
+            <div class="info-label">Hours</div>
+            <div class="info-val">Opens 8:30 AM Daily</div>
+          </div>
+        </div>
+        <div class="services-box">
+          <div class="info-label" style="margin-bottom:.75rem;">Services</div>
+          <div class="service-item"><span class="dot-gold"></span>In-store Pick-up</div>
+          <div class="service-item"><span class="dot-gold"></span>Home Delivery</div>
+          <div class="service-item"><span class="dot-gold"></span>Ample Parking</div>
+          <div class="service-item"><span class="dot-gold"></span>450 m from Bus Stand</div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <div class="section-label">Get In Touch</div>
+        <h3 class="font-display" style="font-size:1.8rem;font-weight:300;margin-bottom:1.5rem;">Send a <em>Message</em></h3>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn-gold submit-btn">
+            <i data-lucide="send" style="width:14px;height:14px;"></i> Send Message
+          </button>
+        </form>
+        <div id="formSuccess" class="form-success hidden">
+          <i data-lucide="award" style="width:40px;height:40px;color:#b8860b;margin-bottom:1rem;"></i>
+          <div style="font-size:1.4rem;font-family:'Cormorant Garamond',serif;color:#1a1612;margin-bottom:.5rem;">Thank you!</div>
+          <div style="font-size:.85rem;color:#7a6a5a;">We'll be in touch shortly.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand" style="margin-bottom:1rem;">
+          <div class="nav-logo"><i data-lucide="shopping-cart"></i></div>
+          <div>
+            <div class="brand-name" style="color:#faf9f7;">Royal Hypermarket</div>
+            <div class="brand-sub">OTTAPALAM · KERALA</div>
+          </div>
+        </div>
+        <p>Your trusted shopping destination, bringing quality and value to Ottapalam every day.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="mailto:info@royalhypermarket.com" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Navigate</div>
+        <a href="#hero">Home</a><a href="#departments">Services</a>
+        <a href="#about">About Us</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Departments</div>
+        <span>Fresh Produce</span><span>Grocery</span><span>Electronics</span><span>Household</span>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Info</div>
+        <a href="tel:+919698300400">096983 00400</a>
+        <span>Palat Rd, Ottapalam</span>
+        <span>Opens 8:30 AM</span>
+        <span>Kerala 679101</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Royal Hypermarket. All rights reserved.</span>
+      <span>Rated 4.1/5 by 1,619 customers ✦</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
